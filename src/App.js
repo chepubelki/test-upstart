@@ -1,7 +1,7 @@
 import React from 'react';
 import {Breadcrumb, Button, Input, Layout, Menu, theme} from 'antd';
 import './App.css';
-import {LeftOutlined, RightOutlined, ShareAltOutlined, UserAddOutlined} from "@ant-design/icons";
+import {LeftOutlined, LockOutlined, RightOutlined, ShareAltOutlined, UserAddOutlined} from "@ant-design/icons";
 import MyInput from "./components/input/MyInput";
 import MyButton from "./components/button/MyButton";
 
@@ -35,10 +35,12 @@ const App: React.FC = () => {
             </Header>
             <Content style={{padding: '80px 50px'}}>
                 <div className="site-layout-content">
+                    <div className="reg-form-title-wrap">
                     <h1 className="reg-form-title">Account security</h1>
+                    </div>
                     <div className="underline"></div>
                     <div className="form-wrap">
-                        <p className="reg-form-desc"><UserAddOutlined/>Personal data</p>
+                        <p className="reg-form-desc"><LockOutlined />Security</p>
                         <div className="reg-input-inner">
                             <div className="reg-input-wrap">
                                 <MyInput type='password' text="Enter your password"/>

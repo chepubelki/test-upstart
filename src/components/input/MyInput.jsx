@@ -9,7 +9,7 @@ const MyInput = ({text, type, ...props}) => {
     function handleTextChange(text) {
         setValue(text);
 
-        if (text !== '') {
+        if (text.length > 0) {
             setIsActive(true);
         } else {
             setIsActive(false);
@@ -27,7 +27,8 @@ const MyInput = ({text, type, ...props}) => {
             />
             <label
                 className={ isActive ? "Active" : ""}
-                className="input-text" htmlFor={type}
+                className="input-text"
+                htmlFor={type}
             >
                 {text}
             </label>

@@ -11,6 +11,12 @@
     margin: 36px 0;
 }
 
+.reg-form-title-wrap {
+    width: fit-content;
+    height: 26px;
+
+}
+
 .reg-form-title {
     font-family: Arial;
     font-weight: 600;
@@ -61,7 +67,6 @@
 }
 
 
-
 #components-layout-demo-top .logo {
     float: left;
     width: 120px;
@@ -83,6 +88,31 @@
 
     .underline {
         margin: 24px 0;
+    }
+
+    .site-layout-content {
+        padding: 28px 16px;
+    }
+
+    .reg-form-title-wrap {
+        margin-bottom: 32px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .reg-form-title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .reg-form-title-wrap {
+        padding: 4px 8px;
+        background: #E1FFE4;
+        border-radius: 8px;
+        margin-bottom: 0;
     }
 }
 
